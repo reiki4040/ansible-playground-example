@@ -1,0 +1,5 @@
+Host 192.168.50.11
+  HostName 192.168.50.11
+  Port 22
+  User vagrant
+  IdentityFile ~/.vagrant.d/insecure_private_key 
