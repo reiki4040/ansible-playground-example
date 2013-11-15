@@ -1,0 +1,5 @@
+- hosts: dev-vm
+  user: vagrant
+  sudo: yes
+  tasks:
+    - debug: msg="Let's create your playbook!"

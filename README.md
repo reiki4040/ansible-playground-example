@@ -67,8 +67,23 @@ show below message (success) is OK.
 
 ### Got ready?
 
+run playbook. Show debug message.
+
+    ansible-playbook -i hosts playbook.yml
+
+    PLAY [dev-vm] *****************************************************************
+
+    GATHERING FACTS ***************************************************************
+    ok: [192.168.50.11]
+
+    TASK: [debug msg="Let's create your playbook!"] ******************************
+    ok: [192.168.50.11] => {"msg": "Let's create your playbook!"}
+
+    PLAY RECAP ********************************************************************
+    192.168.50.11              : ok=2    changed=0    unreachable=0    failed=0
+
 **Let's learn ansible!!**
 
 ## TODO
 
-* create sample playbook
+* more sample playbook
